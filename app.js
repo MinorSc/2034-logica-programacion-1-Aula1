@@ -1,6 +1,6 @@
 
 //variables
-let numeroSecreto = 6;
+let numeroSecreto = 8;
 let numeroUsuario = prompt("Me indicas un numero entre 1 y 10 por favor: ");
 
 console.log(numeroUsuario);
@@ -10,7 +10,7 @@ realiza la comparacion
 */ 
 if(numeroUsuario == numeroSecreto) {
     //Acertamos la condicion fue correcta
-    alert('Acertaste el numero');
+    alert(`Acertaste, el numero es: ${numeroUsuario} `);
     //No acertamos la condicion no fue correcta
 } else {
     alert('Lo siento no acertaste el numero' );
