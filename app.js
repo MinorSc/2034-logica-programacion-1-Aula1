@@ -1,13 +1,13 @@
 
 //variables
-let numeroSecreto = Math.floor(Math.random()*10)+1;
+let numeroSecreto = Math.floor(Math.random()*100)+1;
 let numeroUsuario = 0;
 let intentos = 1;
 //let palabraVeces = 'vez';
-let maximosIntentos = 3;
+let maximosIntentos = 5;
 
 while (numeroUsuario != numeroSecreto) {
-    let numeroUsuario = parseInt(prompt("Me indicas un numero entre 1 y 10 por favor: "));
+    let numeroUsuario = parseInt(prompt("Me indicas un numero entre 1 y 100 por favor: "));
 
     console.log(typeof(numeroUsuario));
     /*
@@ -30,7 +30,7 @@ while (numeroUsuario != numeroSecreto) {
         intentos++;
 
         //palabraVeces = 'veces';
-        if (intentos > 3) {
+        if (intentos > 5) {
             alert(`Llegaste al numero máximo de ${maximosIntentos} intentos`);
             break
         }
